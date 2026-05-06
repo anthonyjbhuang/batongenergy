@@ -696,7 +696,7 @@
         function renderIntroCards() {
             if (!introContainer) return;
             const categories = ['Solar Panels', 'Battery', 'Energy Storage System', 'Light Electric Vehicles'];
-            const imageMap = { 'Solar Panels': 'https://raw.githubusercontent.com/anthonyjbhuang/batongenergy/main/images/image_card1.png', 'Battery': 'https://placehold.co/600x500/e1e9f5/2a4a6a?text=BATTERY', 'Energy Storage System': 'https://placehold.co/600x500/e1e9f5/2a4a6a?text=ENERGY+STORAGE', 'Light Electric Vehicles': 'https://placehold.co/600x500/e1e9f5/2a4a6a?text=LIGHT+EV' };
+            const imageMap = { 'Solar Panels': 'https://raw.githubusercontent.com/anthonyjbhuang/batongenergy/main/images/image_card1.png', 'Battery': 'https://raw.githubusercontent.com/anthonyjbhuang/batongenergy/main/images/image_card2.png', 'Energy Storage System': 'https://raw.githubusercontent.com/anthonyjbhuang/batongenergy/main/images/image_card3.png', 'Light Electric Vehicles': 'https://raw.githubusercontent.com/anthonyjbhuang/batongenergy/main/images/image_card4.png' };
             let html = '';
             categories.forEach(cat => { html += `<div class="intro-card" data-intro-category="${cat}"><div class="intro-img"><img src="${imageMap[cat]}" alt="${cat}"></div><div class="intro-body"><div class="intro-cat-name">${cat}</div><button class="checkout-btn" data-jump-category="${cat}">Check it out →</button></div></div>`; });
             introContainer.innerHTML = html;
